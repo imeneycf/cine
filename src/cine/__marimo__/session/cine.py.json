@@ -1,0 +1,61 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "d490165f5af91ca51acc442e0176b560",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "f7cf374e2d9d09a67266e508584c9c7e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"analysis-of-imdb-films-and-series\">Analysis of IMDb films and series</h1>\n<span class=\"paragraph\">Exploration of several hundred thousand titles: genres, runtimes, decades, top-rated series,\nplus a mini recommendation explorer.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "0b339e3924576a01e7c37d155733c212",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='4034a565-a4d9-f7f9-a40b-752d26c07b9f'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293044&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Coming Out&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2000,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:45,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Horror&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.2,&#92;&quot;numVotes&#92;&quot;:241},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293564&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Rush Hour 3&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2007,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:91,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Action&#92;&quot;,&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Crime&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.3,&#92;&quot;numVotes&#92;&quot;:203274},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293716&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Joseph and Zuleika&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1968,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:102,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Drama&#92;&quot;,&#92;&quot;History&#92;&quot;,&#92;&quot;Romance&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.2,&#92;&quot;numVotes&#92;&quot;:130},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293830&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;tvSeries&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Hand Maid May&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2000,&#92;&quot;endYear&#92;&quot;:2003,&#92;&quot;runtimeMinutes&#92;&quot;:23,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Adventure&#92;&quot;,&#92;&quot;Animation&#92;&quot;,&#92;&quot;Comedy&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.4,&#92;&quot;numVotes&#92;&quot;:256},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293895&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Para Para Sakura&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2001,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:102,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Drama&#92;&quot;,&#92;&quot;Musical&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.7,&#92;&quot;numVotes&#92;&quot;:440},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0294131&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;tvSeries&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Star of the Seine&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1975,&#92;&quot;endYear&#92;&quot;:1975,&#92;&quot;runtimeMinutes&#92;&quot;:null,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Adventure&#92;&quot;,&#92;&quot;Animation&#92;&quot;,&#92;&quot;Drama&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.7,&#92;&quot;numVotes&#92;&quot;:123},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0294594&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Gathering&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2003,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:92,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Horror&#92;&quot;,&#92;&quot;Thriller&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.6,&#92;&quot;numVotes&#92;&quot;:9651},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0294703&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Mapmaker&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2001,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:100,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Thriller&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.9,&#92;&quot;numVotes&#92;&quot;:105},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0294885&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;tvMiniSeries&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Rurouni Kenshin: Reflection&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2001,&#92;&quot;endYear&#92;&quot;:2002,&#92;&quot;runtimeMinutes&#92;&quot;:42,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Adventure&#92;&quot;,&#92;&quot;Animation&#92;&quot;,&#92;&quot;Drama&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:8.0,&#92;&quot;numVotes&#92;&quot;:4579},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0295018&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Wackiest Wagon Train in the West&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1976,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:86,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Western&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:3.9,&#92;&quot;numVotes&#92;&quot;:323}]&quot;' data-total-rows='190939' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;tconst&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;titleType&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;primaryTitle&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;startYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;endYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;runtimeMinutes&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;genres&quot;,[&quot;unknown&quot;,&quot;list[str]&quot;]],[&quot;averageRating&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;numVotes&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkto",
+      "code_hash": "273ac158f3a10e88f074628f4e9841a8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: row;justify-content: space-between;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><marimo-stat data-value='&quot;190 939&quot;' data-label='&quot;Titres&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat><marimo-stat data-value='&quot;147 247&quot;' data-label='&quot;Films&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat><marimo-stat data-value='&quot;43 692&quot;' data-label='&quot;S\u00e9ries&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat><marimo-stat data-value='&quot;6.13&quot;' data-label='&quot;Note moyenne&quot;' data-bordered='false' data-target_direction='&quot;increase&quot;'></marimo-stat></div>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

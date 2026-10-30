@@ -58,6 +58,19 @@ def _(pl):
         .collect()
     )
     titles
+    return (titles,)
+
+
+@app.cell
+def _(mo, pl, titles):
+    # Preview
+
+    mo.hstack([
+        mo.stat(label="Titres", value=f"{titles.height:,}".replace(",", " ")),
+        mo.stat(label="Films", value=f"{titles.filter(pl.col('titleType') == 'movie').height:,}".replace(",", " ")),
+        mo.stat(label="Séries", value=f"{titles.filter(pl.col('titleType') != 'movie').height:,}".replace(",", " ")),
+        mo.stat(label="Note moyenne", value=f"{titles['averageRating'].mean():.2f}"),
+    ])
     return
 
 
