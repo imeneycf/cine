@@ -56,6 +56,32 @@
         }
       ],
       "console": []
+    },
+    {
+      "id": "nXxC",
+      "code_hash": "cd10cda95b6ca62e3beede108b6e3a3d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='nXxC-0' random-id='729b8a61-3ef2-0653-d6f7-e80959fd8162'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293044&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Coming Out&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2000,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:45,&#92;&quot;genre&#92;&quot;:&#92;&quot;Horror&#92;&quot;,&#92;&quot;averageRating&#92;&quot;:6.2,&#92;&quot;numVotes&#92;&quot;:241},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293564&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Rush Hour 3&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2007,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:91,&#92;&quot;genre&#92;&quot;:&#92;&quot;Action&#92;&quot;,&#92;&quot;averageRating&#92;&quot;:6.3,&#92;&quot;numVotes&#92;&quot;:203274},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293564&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Rush Hour 3&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2007,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:91,&#92;&quot;genre&#92;&quot;:&#92;&quot;Comedy&#92;&quot;,&#92;&quot;averageRating&#92;&quot;:6.3,&#92;&quot;numVotes&#92;&quot;:203274},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293564&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Rush Hour 3&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2007,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:91,&#92;&quot;genre&#92;&quot;:&#92;&quot;Crime&#92;&quot;,&#92;&quot;averageRating&#92;&quot;:6.3,&#92;&quot;numVotes&#92;&quot;:203274},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0293716&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Joseph and Zuleika&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1968,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:102,&#92;&quot;genre&#92;&quot;:&#92;&quot;Drama&#92;&quot;,&#92;&quot;averageRating&#92;&quot;:5.2,&#92;&quot;numVotes&#92;&quot;:130}]&quot;' data-total-rows='5' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='false' data-page-size='10' data-field-types='[[&quot;tconst&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;titleType&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;primaryTitle&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;startYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;endYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;runtimeMinutes&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;genre&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;averageRating&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;numVotes&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "KwTI",
+      "code_hash": "5557d2faeec2d1a96d5106c4ea098558",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='KwTI-0' random-id='5639b7b0-1ce0-51be-8ae4-fe9180ffdd03'><marimo-slider data-initial-value='25000' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eVotes minimum&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='1000' data-stop='200000' data-step='1000' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
     }
   ]
 }

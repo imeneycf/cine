@@ -74,5 +74,24 @@ def _(mo, pl, titles):
     return
 
 
+@app.cell
+def _(titles):
+    genres_df = (
+        titles
+        .explode("genres")
+        .rename({"genres": "genre"})
+        .drop_nulls("genre")
+    )
+    genres_df.head()
+    return
+
+
+@app.cell
+def _(mo):
+    min_votes_genre = mo.ui.slider(1_000, 200_000, step=1_000, value=25_000, label="Votes minimum", show_value=True)
+    min_votes_genre
+    return
+
+
 if __name__ == "__main__":
     app.run()
