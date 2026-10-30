@@ -10,7 +10,7 @@ def _():
     import polars as pl
     import altair as alt
 
-    return mo, pl
+    return alt, mo, pl
 
 
 @app.cell
@@ -120,6 +120,53 @@ def _(genres_df, min_votes_genre, mo, pl):
     mo.vstack([
         mo.md("## <i class='ri-trophy-line'></i> Best movie by genre"),
         best_by_genre,
+    ])
+    return
+
+
+@app.cell
+def _(pl, titles):
+    movies = titles.filter(
+        (pl.col("titleType") == "movie")
+        & pl.col("runtimeMinutes").is_between(40, 240)
+    )
+    runtime_corr = movies.select(pl.corr("runtimeMinutes", "averageRating")).item()
+
+    by_runtime = (
+        movies
+        .with_columns(tranche_min=(pl.col("runtimeMinutes") // 15) * 15)
+        .group_by("tranche_min")
+        .agg(
+            n=pl.len(),
+            average_rating=pl.col("averageRating").mean(),
+            median_rating=pl.col("averageRating").median(),
+        )
+        .sort("tranche_min")
+    )
+    by_runtime
+    return by_runtime, movies, runtime_corr
+
+
+@app.cell
+def _(alt, by_runtime, mo, movies, pl, runtime_corr):
+    # Correlation between film length and ratings
+
+    _sample = movies.filter(pl.col("numVotes") >= 5_000)
+    _sample = _sample.sample(min(3_000, _sample.height), seed=42)
+
+    _points = alt.Chart(_sample).mark_circle(opacity=0.25, size=20).encode(
+        x=alt.X("runtimeMinutes:Q", title="Lenght (min)"),
+        y=alt.Y("averageRating:Q", title="IMDb rating", scale=alt.Scale(domain=[1, 10])),
+        tooltip=["primaryTitle", "startYear", "runtimeMinutes", "averageRating"],
+    )
+    _line = alt.Chart(by_runtime).mark_line(color="crimson", strokeWidth=3).encode(
+        x="tranche_min:Q",
+        y="note_moyenne:Q",
+    )
+
+    mo.vstack([
+        mo.md(f"## <i class='ri-hourglass-2-fill'></i> Lenght vs rating — Pearson correlation : **{runtime_corr:.3f}**"),
+        mo.ui.altair_chart(_points + _line),
     ])
     return
 
