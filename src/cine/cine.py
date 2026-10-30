@@ -171,5 +171,64 @@ def _(alt, by_runtime, mo, movies, pl, runtime_corr):
     return
 
 
+@app.cell
+def _(pl, titles):
+    # Sort by decade
+
+    by_decade = (
+        titles
+        .filter(pl.col("startYear").is_between(1920, 2029))
+        .with_columns(decade=(pl.col("startYear") // 10) * 10)
+        .group_by("decade", "titleType")
+        .agg(
+            n=pl.len(),
+            average_rating=pl.col("averageRating").mean(),
+            median_rating=pl.col("averageRating").median(),
+            median_lenght=pl.col("runtimeMinutes").median(),
+        )
+        .sort("decade")
+    )
+    by_decade
+    return (by_decade,)
+
+
+@app.cell
+def _(alt, by_decade, mo):
+    _notes = alt.Chart(by_decade).mark_line(point=True).encode(
+        x=alt.X("decade:O", title="Decade"),
+        y=alt.Y("average_rating:Q", title="Average rating", scale=alt.Scale(zero=False)),
+        color="titleType:N",
+    )
+    _volume = alt.Chart(by_decade).mark_bar().encode(
+        x=alt.X("decade:O", title="Decade"),
+        y=alt.Y("n:Q", title="Number of titles"),
+        color="titleType:N",
+    )
+    mo.vstack([
+        mo.md("## <i class='ri-calendar-2-line'></i> Trends by decade"),
+        mo.hstack([_notes, _volume]),
+    ])
+    return
+
+
+@app.cell
+def _(alt, genres_df, pl):
+    genre_trend = (
+        genres_df
+        .filter((pl.col("titleType") == "movie") & pl.col("startYear").is_between(1950, 2029))
+        .with_columns(decade=(pl.col("startYear") // 10) * 10)
+        .group_by("decade", "genre")
+        .agg(n=pl.len())
+        .with_columns(part=pl.col("n") / pl.col("n").sum().over("decade"))
+    )
+    alt.Chart(genre_trend).mark_area().encode(
+        x="decade:O",
+        y=alt.Y("part:Q", stack="normalize", title="Share of movies"),
+        color="genre:N",
+        tooltip=["genre", "decade", alt.Tooltip("part:Q", format=".1%")],
+    )
+    return
+
+
 if __name__ == "__main__":
     app.run()
