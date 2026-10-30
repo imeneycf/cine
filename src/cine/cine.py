@@ -230,5 +230,27 @@ def _(alt, genres_df, pl):
     return
 
 
+@app.cell(hide_code=True)
+def _(mo, pl, titles):
+    series = titles.filter(pl.col("titleType").is_in(["tvSeries", "tvMiniSeries"]))
+    _m = 10_000
+    _C = series["averageRating"].mean()
+
+    top_series = (
+        series
+        .filter(pl.col("numVotes") >= _m)
+        .with_columns(
+            score=(pl.col("numVotes") / (pl.col("numVotes") + _m)) * pl.col("averageRating")
+            + (_m / (pl.col("numVotes") + _m)) * _C
+        )
+        .sort("score", descending=True)
+        .head(25)
+        .with_columns(pl.col("genres").list.join(", "), pl.col("score").round(2))
+        .select("primaryTitle", "startYear", "endYear", "genres", "averageRating", "numVotes", "score")
+    )
+    mo.vstack([mo.md("## <i class='ri-tv-2-line'></i> Top 25 series (weighted rating)"), top_series])
+    return
+
+
 if __name__ == "__main__":
     app.run()
