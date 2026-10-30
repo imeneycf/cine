@@ -249,6 +249,17 @@ def _(mo, pl, titles):
         .select("primaryTitle", "startYear", "endYear", "genres", "averageRating", "numVotes", "score")
     )
     mo.vstack([mo.md("## <i class='ri-tv-2-line'></i> Top 25 series (weighted rating)"), top_series])
+    return (series,)
+
+
+@app.cell
+def _(mo, pl, series):
+    _by_rating = series.filter(pl.col("numVotes") >= 1_000).sort("averageRating", descending=True).head(10).select("primaryTitle", "averageRating", "numVotes")
+    _by_votes = series.sort("numVotes", descending=True).head(10).select("primaryTitle", "averageRating", "numVotes")
+    mo.hstack([
+        mo.vstack([mo.md("**Raw top rating**"), _by_rating]),
+        mo.vstack([mo.md("**Top number of votes**"), _by_votes]),
+    ])
     return
 
 
