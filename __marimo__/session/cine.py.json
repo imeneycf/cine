@@ -1,0 +1,48 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"analysis-of-imdb-films-and-series\">Analysis of IMDb films and series</h1>\n<span class=\"paragraph\">Exploration of several hundred thousand titles: genres, runtimes, decades, top-rated series,\nplus a mini recommendation explorer.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": null,
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='667aec1c-bafb-6863-76af-ec0b62d54ba9'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0327274&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;tvSeries&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Clase 406&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2002,&#92;&quot;endYear&#92;&quot;:2003,&#92;&quot;runtimeMinutes&#92;&quot;:45,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Crime&#92;&quot;,&#92;&quot;Drama&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:7.0,&#92;&quot;numVotes&#92;&quot;:677},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0327643&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Dirty Love&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2005,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:91,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Romance&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:3.6,&#92;&quot;numVotes&#92;&quot;:7833},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0327660&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;DragonBlade&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2005,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:85,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Action&#92;&quot;,&#92;&quot;Adventure&#92;&quot;,&#92;&quot;Animation&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.2,&#92;&quot;numVotes&#92;&quot;:592},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0327681&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Little Girl of Hanoi&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1974,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:72,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Drama&#92;&quot;,&#92;&quot;War&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:7.0,&#92;&quot;numVotes&#92;&quot;:341},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0327761&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Gemini&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2002,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:150,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Action&#92;&quot;,&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Crime&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.3,&#92;&quot;numVotes&#92;&quot;:1310},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0328077&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Love Object&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2003,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:88,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Drama&#92;&quot;,&#92;&quot;Horror&#92;&quot;,&#92;&quot;Romance&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.3,&#92;&quot;numVotes&#92;&quot;:4009},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0328078&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Love That Boy&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2003,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:85,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Drama&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:6.4,&#92;&quot;numVotes&#92;&quot;:454},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0328258&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Ping Pong&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2002,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:114,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Comedy&#92;&quot;,&#92;&quot;Drama&#92;&quot;,&#92;&quot;Sport&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:7.0,&#92;&quot;numVotes&#92;&quot;:3685},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0328295&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Al Qadisiyya&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1981,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:145,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Drama&#92;&quot;,&#92;&quot;History&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.9,&#92;&quot;numVotes&#92;&quot;:114},{&#92;&quot;tconst&#92;&quot;:&#92;&quot;tt0328729&#92;&quot;,&#92;&quot;titleType&#92;&quot;:&#92;&quot;movie&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Dil Maange More!!!&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2004,&#92;&quot;endYear&#92;&quot;:null,&#92;&quot;runtimeMinutes&#92;&quot;:123,&#92;&quot;genres&#92;&quot;:[&#92;&quot;Musical&#92;&quot;,&#92;&quot;Romance&#92;&quot;],&#92;&quot;averageRating&#92;&quot;:5.2,&#92;&quot;numVotes&#92;&quot;:2310}]&quot;' data-total-rows='190939' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;tconst&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;titleType&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;primaryTitle&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;startYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;endYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;runtimeMinutes&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;genres&quot;,[&quot;unknown&quot;,&quot;list[str]&quot;]],[&quot;averageRating&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;numVotes&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
