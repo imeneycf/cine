@@ -15,8 +15,16 @@ def _():
 
 @app.cell
 def _(mo):
+    mo.Html(
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">'
+    )
+    return
+
+
+@app.cell
+def _(mo):
     mo.md("""
-    # Analysis of IMDb films and series
+    #<i class="ri-clapperboard-fill"></i> Analysis of IMDb movies and series
     Exploration of several hundred thousand titles: genres, runtimes, decades, top-rated series,
     plus a mini recommendation explorer.
     """)
@@ -83,13 +91,36 @@ def _(titles):
         .drop_nulls("genre")
     )
     genres_df.head()
-    return
+    return (genres_df,)
 
 
 @app.cell
 def _(mo):
     min_votes_genre = mo.ui.slider(1_000, 200_000, step=1_000, value=25_000, label="Votes minimum", show_value=True)
     min_votes_genre
+    return (min_votes_genre,)
+
+
+@app.cell
+def _(genres_df, min_votes_genre, mo, pl):
+    # Extract the highest-rated movies from each genre
+
+    best_by_genre = (
+        genres_df
+        .filter(
+            (pl.col("titleType") == "movie")
+            & (pl.col("numVotes") >= min_votes_genre.value)
+        )
+        .sort(["averageRating", "numVotes"], descending=True)
+        .group_by("genre", maintain_order=True)
+        .first()
+        .select("genre", "primaryTitle", "startYear", "averageRating", "numVotes")
+        .sort("genre")
+    )
+    mo.vstack([
+        mo.md("## <i class='ri-trophy-line'></i> Best movie by genre"),
+        best_by_genre,
+    ])
     return
 
 

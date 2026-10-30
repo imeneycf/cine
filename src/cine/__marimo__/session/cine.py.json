@@ -19,13 +19,26 @@
       "console": []
     },
     {
-      "id": "MJUe",
-      "code_hash": "f7cf374e2d9d09a67266e508584c9c7e",
+      "id": "JdMr",
+      "code_hash": "99fd169368f162a326b40679b8307716",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"analysis-of-imdb-films-and-series\">Analysis of IMDb films and series</h1>\n<span class=\"paragraph\">Exploration of several hundred thousand titles: genres, runtimes, decades, top-rated series,\nplus a mini recommendation explorer.</span></span>"
+            "text/html": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css\">"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "41a91867ffd7d38720c5563516299703",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"analysis-of-imdb-movies-and-series\"><i class=\"ri-clapperboard-fill\"></i> Analysis of IMDb movies and series</h1>\n<span class=\"paragraph\">Exploration of several hundred thousand titles: genres, runtimes, decades, top-rated series,\nplus a mini recommendation explorer.</span></span>"
           }
         }
       ],
@@ -78,6 +91,19 @@
           "type": "data",
           "data": {
             "text/html": "<marimo-ui-element object-id='KwTI-0' random-id='5639b7b0-1ce0-51be-8ae4-fe9180ffdd03'><marimo-slider data-initial-value='25000' data-label='&quot;&#92;u003cspan class=&#92;&quot;markdown prose dark:prose-invert contents&#92;&quot;&#92;u003e&#92;u003cspan class=&#92;&quot;paragraph&#92;&quot;&#92;u003eVotes minimum&#92;u003c/span&#92;u003e&#92;u003c/span&#92;u003e&quot;' data-start='1000' data-stop='200000' data-step='1000' data-steps='[]' data-debounce='false' data-disabled='false' data-orientation='&quot;horizontal&quot;' data-show-value='true' data-include-input='false' data-full-width='false'></marimo-slider></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "shCK",
+      "code_hash": "9f0ad81b47d20dcf3e940f6157ccefc5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<div style='display: flex;flex: 1;flex-direction: column;justify-content: flex-start;align-items: normal;flex-wrap: nowrap;gap: 0.5rem'><span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"best-movie-by-genre\"><i class='ri-trophy-line'></i> Best movie by genre</h2></span><marimo-ui-element object-id='shCK-0' random-id='6ea03a37-dbf1-7583-9486-9ef1ded9eb9d'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;genre&#92;&quot;:&#92;&quot;Action&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Attack on Titan: The Last Attack&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2024,&#92;&quot;averageRating&#92;&quot;:8.9,&#92;&quot;numVotes&#92;&quot;:39717},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Adventure&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Lord of the Rings: The Return of the King&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2003,&#92;&quot;averageRating&#92;&quot;:9.0,&#92;&quot;numVotes&#92;&quot;:2204618},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Animation&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Attack on Titan: The Last Attack&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2024,&#92;&quot;averageRating&#92;&quot;:8.9,&#92;&quot;numVotes&#92;&quot;:39717},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Biography&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Schindler&#x27;s List&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1993,&#92;&quot;averageRating&#92;&quot;:9.0,&#92;&quot;numVotes&#92;&quot;:1611363},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Comedy&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Chaos Class&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1975,&#92;&quot;averageRating&#92;&quot;:9.1,&#92;&quot;numVotes&#92;&quot;:46929},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Crime&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Godfather&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1972,&#92;&quot;averageRating&#92;&quot;:9.2,&#92;&quot;numVotes&#92;&quot;:2268963},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Documentary&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;David Attenborough: A Life on Our Planet&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2020,&#92;&quot;averageRating&#92;&quot;:8.9,&#92;&quot;numVotes&#92;&quot;:36512},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Drama&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Shawshank Redemption&#92;&quot;,&#92;&quot;startYear&#92;&quot;:1994,&#92;&quot;averageRating&#92;&quot;:9.3,&#92;&quot;numVotes&#92;&quot;:3259082},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Family&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;Spirited Away&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2001,&#92;&quot;averageRating&#92;&quot;:8.6,&#92;&quot;numVotes&#92;&quot;:991560},{&#92;&quot;genre&#92;&quot;:&#92;&quot;Fantasy&#92;&quot;,&#92;&quot;primaryTitle&#92;&quot;:&#92;&quot;The Lord of the Rings: The Return of the King&#92;&quot;,&#92;&quot;startYear&#92;&quot;:2003,&#92;&quot;averageRating&#92;&quot;:9.0,&#92;&quot;numVotes&#92;&quot;:2204618}]&quot;' data-total-rows='23' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;genre&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;primaryTitle&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;startYear&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;averageRating&quot;,[&quot;number&quot;,&quot;f64&quot;]],[&quot;numVotes&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element></div>"
           }
         }
       ],
